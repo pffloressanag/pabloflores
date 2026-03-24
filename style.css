@@ -47,8 +47,6 @@ nav{
   }
 }
 
-
-
 nav ul{
   display:flex;
   gap:15px; /* un poco menos */
@@ -64,7 +62,6 @@ nav a {
    display: inline-block;
   transition: transform 0.2s ease;
 }
-
 
 nav a::after {
   content: "";
@@ -126,6 +123,8 @@ section{
 max-width:900px;
 margin:auto;
 padding:80px 20px;
+min-height: 100vh;
+scroll-margin-top: 80px;
 
 }
 
@@ -233,4 +232,15 @@ flex-direction:column;
   overflow: hidden;   /* evita que se rompa si el texto es largo */
   text-align: center;
   transition: all 0.3s ease;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
