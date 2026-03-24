@@ -17,27 +17,76 @@ z-index:-1;
 }
 
 nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-display:flex;
-justify-content:space-between;
-padding:20px;
-background:#020617;
+  box-sizing: border-box; /* 🔥 CLAVE */
 
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px;
+  background:#000000;
+
+  z-index:1000;
+
+  animation: slideDown 0.6s ease;
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 
 nav ul{
-
-display:flex;
-gap:20px;
-list-style:none;
-
+  display:flex;
+  gap:15px; /* un poco menos */
+  list-style:none;
+  flex-wrap:wrap; /* evita que se corte */
 }
 
-nav a{
+nav a {
+  color: rgb(117, 248, 1);
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+   display: inline-block;
+  transition: transform 0.2s ease;
+}
 
-color:white;
-text-decoration:none;
 
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #00ff9d;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ff9d;
+  text-shadow: 0 0 5px #00ff9d,
+               0 0 10px #00ff9d,
+               0 0 20px #00ff9d;
+                transform: scale(1.1);
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 header{
@@ -55,14 +104,21 @@ border:4px solid #00ff9d;
 
 }
 
+
 .btn{
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #020800;
+  color: rgb(117, 248, 1);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-background:#00ff9d;
-color:black;
-padding:10px 20px;
-border-radius:5px;
-text-decoration:none;
-
+.btn-cv:hover {
+  background-color: #005edb;
+  transform: scale(1.05);
 }
 
 section{
@@ -165,4 +221,16 @@ flex-direction:column;
 
 }
 
+}
+
+
+.typing {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;   /* evita que se rompa si el texto es largo */
+  text-align: center;
+  transition: all 0.3s ease;
 }
