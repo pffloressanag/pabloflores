@@ -8,10 +8,11 @@ menu.style.display==="flex"?"none":"flex"
 }
 
 const text=[
-"Licenciado en Sistemas",
-"Soporte Técnico",
-"Redes y Hardware",
-"Desarrollador Web"
+"LICENCIADO EN SISTEMAS",
+"TÉCNICO OPERADOR EN COMPUTACIÓN",
+"REDES, HARDWARE Y SOFTWARE",
+"DESARROLLADOR WEB",
+"SOPORTE TÉCNICO COMPUTADORAS Y CELULARES",
 ]
 
 let i=0
@@ -40,3 +41,24 @@ setTimeout(typing,100)
 }
 
 typing()
+
+
+function revealSections() {
+
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach(section => {
+
+    const windowHeight = window.innerHeight;
+    const revealTop = section.getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (revealTop < windowHeight - revealPoint) {
+      section.classList.add("active");
+    }
+
+  });
+
+}
+
+window.addEventListener("scroll", revealSections);
