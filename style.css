@@ -88,15 +88,18 @@ nav a:hover::after {
 
 header{
 
-text-align:center;
-padding:120px 20px;
+min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
 }
 
 .perfil{
 
-width:170px;
-border-radius:50%;
+width:200px;
+border-radius:100%;
 border:4px solid #00ff9d;
 
 }
