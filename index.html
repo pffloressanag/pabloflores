@@ -12,9 +12,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<!-- FONT AWESOME -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -22,120 +20,175 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
+<!-- LOADER HACKER AL INICIAR LA WEB -->
+  <div id="loader">
+
+<h1>Inicializando sistema...</h1>
+
+<div class="loading-bar">
+<div class="progress"></div>
+</div>
+
+</div>
+
+<!-- FONDO MATRIX -->
 <canvas id="matrix"></canvas>
 
+<!-- NAVBAR -->
 <nav>
 
-<div class="logo"><img src="foto-ftech.jpg" class="perfil-ftech"></div>
+<div class="logo">
+
+<img src="foto-ftech.jpg" class="perfil-ftech">
+
+<div class="logo-text">
+
+<h2 class="neon">F-TECH Systems</h2>
+<p>Soluciones tecnológicas y desarrollo web</p>
+
+</div>
+
+</div>
 
 <ul id="menu">
 
 <li><a href="#inicio">Inicio</a></li>
 <li><a href="#sobre">Sobre mí</a></li>
-<li><a href="#experiencia">Experiencia</a></li>
+<li><a href="#clientes">Experiencia</a></li>
 <li><a href="#habilidades">Habilidades</a></li>
 <li><a href="#servicios">Servicios</a></li>
-<li><a href="#Tecnologia">Tecnologías</a></li>
+<li><a href="#tecnologia">Tecnologías</a></li>
 <li><a href="#proyectos">Proyectos</a></li>
 <li><a href="#contacto">Contacto</a></li>
 
 </ul>
 
 <div class="menu-btn" onclick="toggleMenu()">
-<i class="fas fa-bars"></i>
+
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+
 </div>
 
 </nav>
+
+<!-- HEADER -->
 
 <header id="inicio">
 
 <img src="foto.jpg" class="perfil">
 
 <section class="hero">
-  <h1>Pablo Fernando Flores</h1>
-  <p class="typing"></p>
-  <h2>Licenciado en Sistemas | Desarrollador Web en formación | Soporte IT</h2>
 
-  <p>
-  Profesional con experiencia en soporte técnico, redes y desarrollo web.
-  Apasionado por la tecnología, la automatización y la mejora de procesos
-  mediante soluciones informáticas.
-  </p>
-  <a href="cv.pdf" class="btn">Descargar CV</a>
+<h1>Pablo Fernando Flores</h1>
+
+<p class="typing"></p>
+
+<h2>Licenciado en Sistemas | Desarrollador Web en formación | Soporte IT</h2>
+
+<p>
+Profesional con experiencia en soporte técnico, redes y desarrollo web.
+Apasionado por la tecnología, la automatización y la mejora de procesos
+mediante soluciones informáticas.
+</p>
+
+<a href="cv.pdf" class="btn">Descargar CV</a>
 
 </section>
+
 </header>
+
+<!-- SOBRE MI -->
 
 <section id="sobre" class="reveal">
 
-<br><h2 >Sobre mí</h2>
+<h2>Sobre mí</h2>
 
 <p>
-Soy Licenciado en Sistemas y Técnico Operador en Computación con más de 10 años de experiencia en soporte técnico,<br><br>
- redes y gestión tecnológica.</p>
-
- <p>
-Actualmente me encuentro ampliando mis conocimientos en desarrollo web y programación, desarrollando proyectos<br><br> personales
-con HTML, CSS, JavaScript y Java.</p>
+Soy Licenciado en Sistemas y Técnico Operador en Computación con más de 10 años de experiencia en soporte técnico y redes.
+</p>
 
 <p>
-Me especializo en resolver problemas tecnológicos, optimizar procesos y brindar soporte eficiente a usuarios y<br><br> organizaciones.
+Actualmente me encuentro ampliando mis conocimientos en desarrollo web y programación, desarrollando proyectos personales con HTML, CSS, JavaScript y Java.
+</p>
+
+<p>
+Me especializo en resolver problemas tecnológicos, optimizar procesos y brindar soporte eficiente a usuarios y organizaciones.
 </p>
 
 </section>
 
-<section id="experiencia" class="reveal">
 
-<h2>Experiencia Profesional</h2>
+<!-- SECCIÓN "CLIENTES / EXPERIENCIA" -->
 
-<div class="timeline">
+<section id="clientes" class="reveal">
 
-<div class="timeline-item">
+<h2>Experiencia con organizaciones</h2>
 
-<h3>VulcaLar S.A.</h3>
-<p>
-• Encargado de Depósito – Vulca Lar S.A. (2023 – 2025)
-Gestioné la carga y control de sistemas internos, mantenimiento del reloj de marcado, equipos informáticos
- y red de internet, garantizando la continuidad operativa.
-</p>
+<div class="clientes">
+
+<div class="cliente">
+
+<button class="cliente-btn">
+VulcaLar S.A.
+</button>
+
+<div class="cliente-info">
+Encargado de depósito y gestión de sistemas internos.
+Mantenimiento de computadoras, red e internet.
+</div>
+
+</div>
 
 
-<h3>Punto Digital Sanagasta</h3>
-<p>
-• Coordinador – Punto Digital Sanagasta / Centro Cultural Antigua Estafeta (2019 – 2023)
-Coordiné actividades tecnológicas y culturales, brindando soporte informático, capacitación a usuarios y
- gestión de recursos digitales.    
-</p>
+<div class="cliente">
 
-<h3>Biblioteca Popular Dardo de la Vega Díaz</h3>
-<P>
-• Director – Biblioteca Popular Dardo de la Vega Díaz (2019 – 2023)
-Dirigí la gestión institucional y tecnológica, modernizando procesos y promoviendo el acceso a herramientas digitales.
-</P>
+<button class="cliente-btn">
+Punto Digital Sanagasta
+</button>
 
-<h3>EPET N° 1</h3>
-<p>
-• Tutor en Informática – EPET Nº 1 (2017)
-Dicté clases de apoyo en Informática, Lógica Computacional, Algoritmos y Programación en C.
-</p>
+<div class="cliente-info">
+Coordinador del espacio tecnológico.
+Capacitaciones en informática y soporte a usuarios.
+</div>
 
-<h3>Técnico en Reparación</h3>
-<p>
-• Técnico en Reparación de PC – Servicio Independiente (2014 – 2019)
-Realicé diagnóstico, reparación y mantenimiento de equipos informáticos y software.
-</p>
+</div>
 
-<h3>Municipio de Sanagasta</h3>
-<p>
-• Experiencia en organismos públicos (2011 – 2016)
-Secretarías municipales y Museo Los Sanagastas: soporte técnico, carga de sistemas y asistencia informática.
-</p>
+
+<div class="cliente">
+
+<button class="cliente-btn">
+Municipio de Sanagasta
+</button>
+
+<div class="cliente-info">
+Trabajo en organismos públicos realizando
+soporte técnico y carga de sistemas.
+</div>
+
+</div>
+
+
+<div class="cliente">
+
+<button class="cliente-btn">
+Biblioteca Popular
+</button>
+
+<div class="cliente-info">
+Director institucional y responsable de
+modernización tecnológica.
+</div>
 
 </div>
 
 </div>
 
 </section>
+
+
+<!-- HABILIDADES -->
 
 <section id="habilidades" class="reveal">
 
@@ -167,6 +220,8 @@ Secretarías municipales y Museo Los Sanagastas: soporte técnico, carga de sist
 
 </section>
 
+<!-- SERVICIOS -->
+
 <section id="servicios" class="reveal">
 
 <h2>Servicios Técnicos</h2>
@@ -182,7 +237,7 @@ Secretarías municipales y Museo Los Sanagastas: soporte técnico, carga de sist
 <div class="card">
 <i class="fas fa-network-wired"></i>
 <h3>Redes</h3>
-<p>Instalación y configuración de redes y routers.</p>
+<p>Instalación y configuración de redes.</p>
 </div>
 
 <div class="card">
@@ -194,12 +249,16 @@ Secretarías municipales y Museo Los Sanagastas: soporte técnico, carga de sist
 <div class="card">
 <i class="fas fa-mobile-alt"></i>
 <h3>Reparación Celulares</h3>
-<p>Reparación de Software de Celulares.</p>
+<p>Reparación de software de celulares.</p>
 </div>
 
 </div>
 
-<section id="Tecnologia" class="reveal">
+</section>
+
+<!-- TECNOLOGIAS -->
+
+<section id="tecnologia" class="reveal">
 
 <h2>Tecnologías</h2>
 
@@ -218,51 +277,111 @@ Secretarías municipales y Museo Los Sanagastas: soporte técnico, carga de sist
 
 </section>
 
-</section>
+<!-- PROYECTOS -->
 
 <section id="proyectos" class="reveal">
 
 <h2>Proyectos</h2>
 
-<div class="cards">
+<div class="card">
+
+<h3>Portafolio Web Personal</h3>
+
+<p>
+Sitio web personal desarrollado para presentar mi perfil profesional,
+experiencia laboral, habilidades técnicas y proyectos.
+
+El sistema incluye animaciones, menú responsive, efectos visuales
+(MATRIX background), secciones dinámicas y diseño adaptable a dispositivos móviles.
+
+Tecnologías utilizadas: HTML, CSS y JavaScript.
+</p>
+
+<div class="project-buttons">
+
+<a href="https://pffloressanag.github.io/portfolio" class="btn-demo" target="_blank">
+Ver Demo
+</a>
+
+<a href="https://github.com/pffloressanag" class="btn-code" target="_blank">
+Ver Código
+</a>
+
+</div>
+
+</div>
 
 <div class="card">
 
-<h3>Portafolio Personal</h3>
+<h3>Conversor de Texto a Binario</h3>
 
-<p>Página web para mostrar mi portafolio y descargar mi curriculum.</p>
+<p>
+Aplicación web que convierte letras y números a código binario
+utilizando codificación de 8 bits.
+
+Permite ingresar texto y visualizar su representación en binario
+de forma inmediata.
+
+Tecnologías utilizadas: HTML, CSS y JavaScript.
+</p>
+
+<div class="project-buttons">
+
+<a href="https://pffloressanag.github.io/binario" class="btn-demo" target="_blank">
+Ver Demo
+</a>
+
+<a href="https://github.com/pffloressanag" class="btn-code" target="_blank">
+Ver Código
+</a>
+
+</div>
 
 </div>
 
 <div class="card">
 
-<h3>Trabajo Práctico Integrador</h3>
+<h3>Generador de Contraseñas Seguras</h3>
 
-<p>Página web aplicando Bootstrap y JavaScript.</p>
+<p>
+Herramienta web que genera contraseñas seguras automáticamente
+combinando letras, números y símbolos.
+
+Permite seleccionar la longitud de la contraseña y copiarla
+directamente al portapapeles.
+
+Tecnologías utilizadas: HTML, CSS y JavaScript.
+</p>
+
+<div class="project-buttons">
+
+<a href="#" class="btn-demo">
+Ver Demo
+</a>
+
+<a href="https://github.com/pffloressanag" class="btn-code">
+Ver Código
+</a>
 
 </div>
 
 </div>
-
 </section>
+
+<!-- CONTACTO -->
 
 <section id="contacto" class="reveal">
 
 <h2>Contacto</h2>
 
 <p><i class="fas fa-envelope"></i> pfflores.sana@gmail.com</p>
-
 <p><i class="fas fa-phone"></i> 3804622485</p>
-
 <p><i class="fas fa-map-marker-alt"></i> Villa Sanagasta - La Rioja - Argentina</p>
 
 </section>
 
-<footer class="footer">
+<!-- REDES -->
 
-<p>© 2026 Pablo Fernando Flores</p>
-
-<p>
 <div class="redes">
 
 <a href="https://wa.me/543804915346" target="_blank" class="whatsapp">
@@ -284,15 +403,23 @@ Secretarías municipales y Museo Los Sanagastas: soporte técnico, carga de sist
 <a href="https://www.facebook.com/" target="_blank" class="facebook">
 <i class="fab fa-facebook"></i>
 </a>
-</p>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<p>© 2026 Pablo Fernando Flores</p>
 
 </footer>
+
+<div class="cursor"></div>
+
+<!-- SCRIPTS -->
 
 <script src="script.js"></script>
 <script src="matrix.js"></script>
 
-<script src="script.js"></script>
-
-</div>
 </body>
 </html>
