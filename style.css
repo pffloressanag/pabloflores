@@ -422,3 +422,109 @@ bottom:10px;
 }
 
 }
+
+
+
+
+
+/* ===== RESPONSIVE CELULAR ===== */
+
+@media (max-width:768px){
+
+body{
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-direction:column;
+gap:10px;
+padding:0;
+}
+
+/* HERO */
+
+.hero{
+padding:120px 20px 60px 20px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+/* FOTO */
+
+.foto{
+width:130px;
+}
+
+/* BOTONES */
+
+.btn{
+padding:8px 18px;
+font-size:14px;
+}
+
+/* TECNOLOGIAS */
+
+.skills-grid{
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+/* PROYECTOS */
+
+.proyectos-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+/* TARJETAS */
+
+.card{
+padding:15px;
+}
+
+/* ICONOS REDES */
+
+.redes{
+right:10px;
+bottom:10px;
+}
+
+.redes a{
+width:45px;
+height:45px;
+font-size:20px;
+}
+
+/* SECCIONES */
+
+section{
+padding:80px 20px;
+}
+
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+p{
+line-height:1.6;
+}
