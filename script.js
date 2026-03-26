@@ -1,15 +1,15 @@
 function toggleMenu(){
 
 const menu = document.getElementById("menu");
+const btn = document.querySelector(".menu-btn");
 
-if(menu.style.display === "flex"){
+menu.classList.toggle("active");
+btn.classList.toggle("active");
 
-menu.style.display = "none";
-
+if(menu.classList.contains("active")){
+menu.style.display="flex";
 }else{
-
-menu.style.display = "flex";
-
+menu.style.display="none";
 }
 
 }
