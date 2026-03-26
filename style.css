@@ -388,3 +388,37 @@ background:linear-gradient(
 transform:scale(1.2);
 
 }
+
+@media (max-width:768px){
+
+nav ul{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.foto{
+width:130px;
+}
+
+.skills-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.proyectos-grid{
+grid-template-columns:1fr;
+}
+
+.redes{
+right:10px;
+bottom:10px;
+}
+
+}
