@@ -183,19 +183,6 @@ color:#00ff9d;
 
 }
 
-.whatsapp{
-
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-font-size:28px;
-padding:15px;
-border-radius:50%;
-
-}
-
 .menu-btn{
 
 display:none;
@@ -224,7 +211,6 @@ flex-direction:column;
 }
 
 }
-
 
 .typing {
   height: 50px;
@@ -309,9 +295,96 @@ section{
 }
 .footer{
 position:fixed;
-bottom:20px;
-color:white;
+bottom:10px;
+color:rgb(53, 246, 0);
 font-size:15px;
 padding:15px;
+}
+
+
+.color_text{
+  color: #4cfe00;
+}
+
+.redes{
+
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+.redes a{
+
+width:55px;
+height:55px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:26px;
+
+border-radius:50%;
+
+color:white;
+
+text-decoration:none;
+
+transition:0.3s;
+
+}
+
+
+/* WHATSAPP */
+
+.whatsapp{
+
+background:#25D366;
+
+}
+
+
+/* LINKEDIN */
+
+.linkedin{
+
+background:#0077B5;
+
+}
+
+
+/* GITHUB */
+
+.github{
+
+background:#333;
+
+}
+
+
+/* INSTAGRAM */
+
+.instagram{
+
+background:linear-gradient(
+45deg,
+#f58529,
+#dd2a7b,
+#8134af,
+#515bd4
+);
+
+}
+
+
+/* EFECTO HOVER */
+
+.redes a:hover{
+
+transform:scale(1.2);
 
 }
