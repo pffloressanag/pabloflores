@@ -363,6 +363,45 @@ border-radius:6px;
 text-decoration:none;
 }
 
+/* BOTON HAMBURGUESA */
+
+.menu-btn{
+
+display:none;
+flex-direction:column;
+cursor:pointer;
+
+}
+
+.bar{
+
+width:25px;
+height:3px;
+background:white;
+margin:4px 0;
+
+}
+
+/* BOTON HAMBURGUESA */
+
+.menu-btn{
+
+display:none;
+flex-direction:column;
+cursor:pointer;
+
+}
+
+.bar{
+
+width:25px;
+height:3px;
+background:white;
+margin:4px 0;
+
+}
+
+
 /* =========================
 SECCIONES
 ========================= */
@@ -620,6 +659,44 @@ padding:15px;
 /* =========================
 RESPONSIVE
 ========================= */
+
+/* =========================
+BOTON HAMBURGUESA QUE SOLO APAREZCA EN MI CELULAR
+========================= */
+
+@media (max-width:768px){
+
+#menu{
+
+position:absolute;
+top:70px;
+right:0;
+
+background:#0a0a0a;
+
+width:200px;
+
+flex-direction:column;
+
+display:none;
+
+}
+
+#menu li{
+
+padding:15px;
+text-align:center;
+
+}
+
+.menu-btn{
+
+display:flex;
+
+}
+
+}
+
 
 @media(max-width:768px){
 
