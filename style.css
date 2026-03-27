@@ -373,24 +373,25 @@ cursor:pointer;
 
 }
 
-.bar{
 
-width:25px;
-height:3px;
-background:white;
-margin:4px 0;
 
+/*TODAS LAS HABILIDADES*/
+.soporte{ width:90%; }
+.redes{ width:75%; }
+.programacion{ width:70%; }
+.hardware{ width:80%; }
+
+.skill-bar{
+height:10px;
+background:#1e293b;
+width:100%;
 }
 
-/* BOTON HAMBURGUESA */
-
-.menu-btn{
-
-display:none;
-flex-direction:column;
-cursor:pointer;
-
+.skill-bar div{
+height:100%;
+background:#00ff9d;
 }
+
 
 .bar{
 
@@ -594,13 +595,17 @@ transform:translateY(0);
 REDES SOCIALES
 ========================= */
 
-.redes{
-position:fixed;
-right:20px;
-bottom:20px;
-display:flex;
-flex-direction:column;
-gap:15px;
+.redes {
+    position: fixed !important; /* Fuerza la posición fija */
+    bottom: 20px !important;    /* Distancia desde abajo */
+    right: 20px !important;     /* ¡Esto lo manda a la derecha sí o sí! */
+    left: auto !important;      /* Anula cualquier orden de ir a la izquierda */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99999;             /* Lo pone por encima de todo */
+    width: auto;                /* Evita que ocupe todo el ancho de la pantalla */
 }
 
 .redes a{
@@ -623,7 +628,6 @@ transform:scale(1.2);
 .whatsapp{background:#25D366;}
 .linkedin{background:#0077B5;}
 .github{background:#333;}
-
 .instagram{
 background:linear-gradient(
 45deg,
@@ -656,9 +660,6 @@ font-size:15px;
 padding:15px;
 }
 
-/* =========================
-RESPONSIVE
-========================= */
 
 /* =========================
 BOTON HAMBURGUESA QUE SOLO APAREZCA EN MI CELULAR
